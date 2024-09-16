@@ -1,1 +1,1 @@
-# CommonCore42
+# CommonCore

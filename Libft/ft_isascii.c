@@ -6,7 +6,7 @@
 /*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:52:05 by andre             #+#    #+#             */
-/*   Updated: 2024/10/15 18:01:06 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/16 20:24:28 by andre            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-/* int main() {
+ int main() {
     char c = 65;
 
     if (isascii(c)) {
@@ -36,4 +36,4 @@ int	ft_isascii(int c)
     }
 
     return 0;
-} */
+}

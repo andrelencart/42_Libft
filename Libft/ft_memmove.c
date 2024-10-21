@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:48:32 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 20:32:30 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/21 16:48:13 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)  // Used to copy a blo
 	return (dest)
 }
 
-int main(void)
+/* int main(void)
 {
     char str[20] = "Hello, World!";
     printf("Original string: '%s'\n", str);
@@ -59,5 +59,5 @@ int main(void)
 
     return 0;
 
-}
+} */
 

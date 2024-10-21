@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:07:38 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 20:32:26 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/21 16:47:54 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *str, int c, size_t len) // Used to locate the first 
 	return (NULL);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char str[] = "Hello, World!";
 	char *result;
@@ -52,5 +52,5 @@ int	main(void)
 		printf("Standard memchr: Character not found!\n");
 
 	return 0;
-}
+} */
 

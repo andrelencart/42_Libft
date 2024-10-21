@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:35:10 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 21:09:52 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/21 16:48:04 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t len)
 	return (0);
 }
 
-int main(void)
+/* int main(void)
 {
     char str1[] = "Hello, World!";
     char str2[] = "Hello, World!";  // Same as str1 for the first comparison
@@ -51,4 +51,4 @@ int main(void)
     printf("Comparing str1 and str2 with standard memcmp after modification: %d\n", memcmp(str1, str2, sizeof(str1)));  // Expected: non-zero
 
     return 0;
-}
+} */

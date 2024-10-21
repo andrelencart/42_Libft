@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:29:53 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 20:32:41 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/21 16:48:08 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t len) // Used to copy a block
 	return (dest);
 }
 
-int main(void)
+/* int main(void)
 {
     char src[] = "Hello, World!";
     char dest[20]; 
@@ -49,4 +49,4 @@ int main(void)
     printf("Destination after memcpy: '%s'\n", dest2);
 
     return 0;
-}
+} */

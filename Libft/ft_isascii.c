@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:52:05 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 20:24:28 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/21 16:47:49 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 
- int main() {
+/*  int main() {
     char c = 65;
 
     if (isascii(c)) {
@@ -37,3 +37,4 @@ int	ft_isascii(int c)
 
     return 0;
 }
+ */

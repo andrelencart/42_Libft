@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 18:19:00 by andre             #+#    #+#             */
-/*   Updated: 2024/10/24 14:40:31 by andcarva         ###   ########.fr       */
+/*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
+/*   Updated: 2024/10/24 15:57:42 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stddef.h>  // for size_t
 #include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 
-// Used to fill a block of memory with a particular value
-// With the int C the function is more flexible can pass values larger than 255, the memset funtion uses int c as well.
 void	*ft_memset(void *ptrmem, int c, size_t len)
 {
 	unsigned char	*ptr;
@@ -29,20 +27,35 @@ void	*ft_memset(void *ptrmem, int c, size_t len)
 		i++;
 	}
 	return (ptrmem); 
-	// Allows function chaining and provides convenience.
+}
+void	*ft_calloc(size_t num, size_t size)
+{
+	int	total_size = num * size;
+	void	*ptr;
+	
+	total_size = num * size;
+	ptr = (void *)malloc(total_size);
+	if (!ptr)
+		return (NULL);
+	ft_memset(ptr, 0, total_size);
+	return (ptr);
 }
 
-/* int main() 
-{
-    char str[50] = "Hello, World!";
-    printf("Before memset: %s\n", str);
-    
-    // Fill the first 5 characters of the string with '*'
-    
-    ft_memset(str, '*', 5);
-    printf("After ft_memset: %s\n", str);
-	memset(str, '*', 5);
-	printf("After memset: %s\n", str);
-    
-	return 0;
-}  */
+int main() {
+    int n = 5;
+    int* arr = (int*) ft_calloc(n, sizeof(int));
+	int i = 0;
+
+    if (arr == NULL) 
+	{
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+    while(i < n) 
+	{
+        printf("arr[%d] = %d\n", i, arr[i]);
+		i++;
+    }
+    free(arr);
+    return 0;
+}

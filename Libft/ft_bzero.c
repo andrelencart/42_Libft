@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:09:12 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/21 14:48:29 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:51:14 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stddef.h>  // for size_t
 #include <stdio.h>
 
-void	ft_bzero(void *ptr, size_t size) // It fills a certain number of bytes in a block of memory with zeros 
+void	ft_bzero(void *ptr, size_t size)
 {
 	size_t	i;
 	unsigned char	*p;

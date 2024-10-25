@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andre <andre@student.42.fr>                +#+  +:+       +#+        */
+/*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:34:42 by andre             #+#    #+#             */
-/*   Updated: 2024/10/16 20:58:39 by andre            ###   ########.fr       */
+/*   Updated: 2024/10/25 13:33:25 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -21,14 +20,15 @@ int	ft_atoi(char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] != '\0' && (str[i] == ' ' || (str[i] <= 9 && str[i] >= 13)))
+	while (str[i] != '\0' && (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
 		i++;
-	while (str[i] != '\0' && (str[i] == '-' || str[i] == '+'))
+	if (str[i] == '-')
 	{
-		if (str[i] == '-')
-			sign = sign * -1;
-		i++;
+		sign *= -1;
+		i++;	
 	}
+	if (str[i] == '+')
+		i++;
 	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{
 		result = result * 10 + (str[i] - '0');
@@ -39,6 +39,7 @@ int	ft_atoi(char *str)
 
 /* int	main(void)
 {
-	char arr[] = "   ---+--1234oi567";
+	const char arr[] = "   +1234oi567";
 	printf("%d\n", ft_atoi(arr));
+	printf("%d\n", atoi(arr));
 } */

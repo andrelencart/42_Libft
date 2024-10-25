@@ -6,13 +6,11 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:35:10 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:48:04 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:43:16 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stddef.h>  // for size_t
-#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {

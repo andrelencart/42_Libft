@@ -6,19 +6,17 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:29:53 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:48:08 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:43:21 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stddef.h>  // for size_t
-#include <stdio.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t len) // Used to copy a block of memory from one location to another
+void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
-	unsigned char *d; 
-	unsigned const char *s; 
-	size_t i;
+	unsigned char	*d;
+	unsigned const char	*s; 
+	size_t	i;
 
 	i = 0;
 	d = (unsigned char *)dest;

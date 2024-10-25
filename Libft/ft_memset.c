@@ -6,16 +6,12 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 18:19:00 by andre             #+#    #+#             */
-/*   Updated: 2024/10/24 14:40:31 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:45:36 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stddef.h>  // for size_t
-#include <stdio.h>
+#include <stddef.h>  
 
-// Used to fill a block of memory with a particular value
-// With the int C the function is more flexible can pass values larger than 255, the memset funtion uses int c as well.
 void	*ft_memset(void *ptrmem, int c, size_t len)
 {
 	unsigned char	*ptr;
@@ -29,7 +25,6 @@ void	*ft_memset(void *ptrmem, int c, size_t len)
 		i++;
 	}
 	return (ptrmem); 
-	// Allows function chaining and provides convenience.
 }
 
 /* int main() 

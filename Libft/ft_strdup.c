@@ -6,11 +6,10 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:20:20 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/24 15:47:14 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:46:14 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 char	*ft_strdup(char *src)

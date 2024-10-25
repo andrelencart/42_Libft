@@ -6,12 +6,9 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:52:05 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:47:49 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:42:02 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <ctype.h>
 
 int	ft_isascii(int c)
 {

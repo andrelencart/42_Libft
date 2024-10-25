@@ -6,15 +6,15 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:48:32 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:48:13 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:36:50 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+/* #include <stdio.h>
 #include <string.h>
-#include <stddef.h>  // for size_t
-#include <stdio.h>
-
-void	*ft_memmove(void *dest, const void *src, size_t len)  // Used to copy a block of memory from one location to another, similar to memcpy, but it is specifically designed to handle overlapping memory regions safely.
+ */
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	size_t	i;
 	unsigned char *d; 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)  // Used to copy a blo
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
-	if (d < s) // If source and destination overlap, copy from the end to the start
+	if (d < s)
 	{
 		while (i < len)
 		{
@@ -40,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)  // Used to copy a blo
 			i--;
 		}
 	}
-	return (dest)
+	return (dest);
 }
 
 /* int main(void)
@@ -49,15 +49,14 @@ void	*ft_memmove(void *dest, const void *src, size_t len)  // Used to copy a blo
     printf("Original string: '%s'\n", str);
 
     // Using ft_memmove to overlap regions
-    ft_memmove(str + 13, str, 6); // Move "Hello," to the position after ", "
-    printf("After ft_memmove: '%s'\n", str); // Expected output: "Hello, Hello!"
+    ft_memmove(str + 13, str, 6); 
+    printf("After ft_memmove: '%s'\n", str);
 
     // Using standard memmove for comparison
     char str2[20] = "Hello, World!";
-    memmove(str2 + 13, str2, 6); // Move "Hello," to the position after ", "
-    printf("After standard memmove: '%s'\n", str2); // Expected output: "Hello, Hello!"
+    memmove(str2 + 13, str2, 6);
+    printf("After memmove: '%s'\n", str2);
 
     return 0;
 
 } */
-

@@ -6,15 +6,13 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:07:38 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:47:54 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:42:44 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stddef.h>  // for size_t
-#include <stdio.h>
 
-void	*ft_memchr(const void *str, int c, size_t len) // Used to locate the first occurrence of a specified character in a block of memory.
+void	*ft_memchr(const void *str, int c, size_t len)
 {
 	size_t i;
 	unsigned const char *s; 
@@ -23,7 +21,7 @@ void	*ft_memchr(const void *str, int c, size_t len) // Used to locate the first 
 	ch = (unsigned char)c;
 	s = (unsigned const char *)str;
 	i = 0;
-	while (i < len) // Iterate over the first n bytes
+	while (i < len)
 	{
 		if (s[i] == ch)
 			return ((void *)(str + i));

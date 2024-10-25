@@ -6,13 +6,11 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/24 15:57:42 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:34:13 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
 
 void	*ft_memset(void *ptrmem, int c, size_t len)
 {
@@ -41,7 +39,7 @@ void	*ft_calloc(size_t num, size_t size)
 	return (ptr);
 }
 
-int main() {
+/* int main() {
     int n = 5;
     int* arr = (int*) ft_calloc(n, sizeof(int));
 	int i = 0;
@@ -58,4 +56,4 @@ int main() {
     }
     free(arr);
     return 0;
-}
+} */

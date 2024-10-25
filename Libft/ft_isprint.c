@@ -6,12 +6,9 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:57:02 by andre             #+#    #+#             */
-/*   Updated: 2024/10/25 12:49:48 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:42:15 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <ctype.h>
 
 int	ft_isprint(int c)
 {

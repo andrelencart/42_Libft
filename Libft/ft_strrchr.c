@@ -6,11 +6,10 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:28:57 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/21 16:47:40 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:49:54 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {

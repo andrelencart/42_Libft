@@ -6,22 +6,11 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:03:37 by andre             #+#    #+#             */
-/*   Updated: 2024/10/21 16:48:35 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:47:31 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * Concatenates src to the end of dest up to size - 1 characters.
- * Always null-terminates the result.
- * Returns the total length of the string that would have been created.
- *
- * @param dest The destination string to which src will be concatenated.
- * @param src The source string to be appended.
- * @param size The size of the destination buffer.
- * @return The length of the resulting string (the initial length of dest + length of src).
- */
-
- #include <stddef.h>  // for size_t
+ #include <stddef.h>
  
  size_t	ft_strlcat(char *dest, char *src, size_t size)
  {

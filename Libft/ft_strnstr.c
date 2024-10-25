@@ -6,7 +6,44 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:48:43 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/21 16:48:44 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:17:45 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+	size_t	j;
+
+	if (!*little)
+		return ((char *)big);
+	i = 0;
+	while (big[i] != '\0' && i < len)
+	{
+		j = 0;
+		if (big[i] == little[j])
+		{
+			while (little[j] != '\0' && ((j + i) < len) && big[i + j] == little[j])
+			{
+				if (little[j] != '\0')
+					return (char *)(big + i);
+				j++;
+			}	
+		}
+		i++;
+	}
+	return (0);
+}
+
+int	main(void)
+{
+	char	strbig[] = "Hello, my name is Andre";
+	char	strlit[] = "name";
+	char	*result;
+
+	result = ft_strnstr(strbig, strlit, 11);
+	printf("%s\n", result);	
+}

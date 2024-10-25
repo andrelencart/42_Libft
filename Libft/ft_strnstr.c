@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:48:43 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/25 17:17:45 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:21:26 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		j = 0;
 		if (big[i] == little[j])
 		{
-			while (little[j] != '\0' && ((j + i) < len) && big[i + j] == little[j])
-			{
-				if (little[j] != '\0')
-					return (char *)(big + i);
+			while (little[j] != '\0' && j + i < len && big[i + j] == little[j])
 				j++;
-			}	
+			if (little[j] == '\0')
+				return (char *)(big + i);
 		}
 		i++;
 	}
@@ -44,6 +42,6 @@ int	main(void)
 	char	strlit[] = "name";
 	char	*result;
 
-	result = ft_strnstr(strbig, strlit, 11);
+	result = ft_strnstr(strbig, strlit, 14);
 	printf("%s\n", result);	
 }

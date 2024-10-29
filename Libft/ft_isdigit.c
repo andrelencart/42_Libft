@@ -6,9 +6,11 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:37:06 by andre             #+#    #+#             */
-/*   Updated: 2024/10/25 13:42:12 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/28 15:28:59 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

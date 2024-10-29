@@ -6,13 +6,13 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/25 13:34:13 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 11:55:11 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-void	*ft_memset(void *ptrmem, int c, size_t len)
+/* void	*ft_memset(void *ptrmem, int c, size_t len)
 {
 	unsigned char	*ptr;
 	size_t	i;
@@ -25,12 +25,12 @@ void	*ft_memset(void *ptrmem, int c, size_t len)
 		i++;
 	}
 	return (ptrmem); 
-}
+} */
 void	*ft_calloc(size_t num, size_t size)
 {
-	int	total_size = num * size;
+	int		total_size;
 	void	*ptr;
-	
+
 	total_size = num * size;
 	ptr = (void *)malloc(total_size);
 	if (!ptr)

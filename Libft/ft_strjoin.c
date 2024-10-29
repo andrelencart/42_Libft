@@ -1,47 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 19:45:58 by andre             #+#    #+#             */
-/*   Updated: 2024/10/29 16:38:50 by andcarva         ###   ########.fr       */
+/*   Created: 2024/10/28 15:35:49 by andcarva          #+#    #+#             */
+/*   Updated: 2024/10/29 13:51:39 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <bsd/string.h>
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char		*s3;
+	size_t		len;
 	size_t		i;
-	size_t		src_len;
+	size_t		j;
 
+	len = ft_strlen(s1) + ft_strlen(s2);
+	s3 = malloc(sizeof(char const) * len + 1);
+	if (!s3)
+		return (NULL);
 	i = 0;
-	src_len = 0;
-	while (src[src_len] != '\0')
-		src_len++;
-	if (size > 0)
+	while (s1[i] != '\0')
 	{
-		while (src[i] != '\0' && i < size - 1)
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
+		s3[i] = s1[i];
+		i++;
 	}
-	return (src_len);
+	j = 0;
+	while (s2[j] != '\0')
+	{
+		s3[i + j] = s2[j];
+		j++;
+	}
+	s3[i + j] = '\0';
+	return (s3);
 }
 
 /* int	main(void)
 {
-	char	src[] = "Hello World!";
-	char	dest[10];
-	int		result;
+	char	*s1 = "Hello";
+	char	*s2 = " World";
+	char	*s3;
 
-	result = ft_strlcpy(dest, src, 8);
-	printf("%zu\n", strlcpy(dest, src, 8));
-	printf("%d\n", result);
-	printf("%s\n", dest);
+	s3 = ft_strjoin(s1, s2);
+	
+	printf("Final: %s\n", s3);
 } */

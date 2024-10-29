@@ -6,12 +6,13 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:28:57 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/25 13:49:54 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:11:05 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-int	ft_strlen(char *str)
+/* int	ft_strlen(char *str)
 {
 	int	len;
 
@@ -19,12 +20,12 @@ int	ft_strlen(char *str)
 	while (str[len] != '\0')
 		len++;
 	return (len);
-}
+} */
 
 char	*ft_strrchr(const char *ptr, int c)
 {
 	char	*p;
-	int i;
+	int		i;
 
 	p = (char *)ptr;
 	i = ft_strlen(p);

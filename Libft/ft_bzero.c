@@ -6,17 +6,17 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:09:12 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/25 13:33:37 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 11:54:09 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h> 
+#include "libft.h"
 
 void	ft_bzero(void *ptr, size_t size)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*p;
-	
+
 	p = (unsigned char *)ptr;
 	i = 0;
 	while (i < size)

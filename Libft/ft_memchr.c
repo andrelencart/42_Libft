@@ -6,18 +6,18 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:07:38 by andre             #+#    #+#             */
-/*   Updated: 2024/10/25 13:42:44 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 11:59:43 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>  // for size_t
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t len)
 {
-	size_t i;
-	unsigned const char *s; 
-	unsigned char ch;
-	
+	size_t				i;
+	unsigned const char	*s;
+	unsigned char		ch;
+
 	ch = (unsigned char)c;
 	s = (unsigned const char *)str;
 	i = 0;
@@ -45,10 +45,10 @@ void	*ft_memchr(const void *str, int c, size_t len)
 	// Using standard memchr for comparison
 	char *result2 = memchr(str, 'o', sizeof(str));
 	if (result2)
-		printf("Standard memchr: Found '%c' at position: %ld\n", *result2, result2 - str);
+		printf("Standard memchr: Found '%c' at position: %ld\n", 
+		*result2, result2 - str);
 	else
 		printf("Standard memchr: Character not found!\n");
 
 	return 0;
 } */
-

@@ -6,18 +6,18 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:20:20 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/25 13:46:14 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:17:00 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	char	*dup;
-	
+
 	i = 0;
 	len = 0;
 	while (src[len] != '\0')

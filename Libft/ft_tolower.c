@@ -6,13 +6,15 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:02:47 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/21 15:23:14 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:13:14 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
-	if (c <= 'A' && c >= 'Z')
-		c -= 32;
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
 	return (c);
 }

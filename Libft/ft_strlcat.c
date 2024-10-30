@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:03:37 by andre             #+#    #+#             */
-/*   Updated: 2024/10/29 15:27:24 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/30 18:57:30 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,14 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
+
+/* int	main(void)
+{
+	char	*src = "Hello";
+	char	dest[30] = "byebyebye";
+	size_t	result;
+	
+	result = ft_strlcat(dest, src, 3);
+	printf("%d\n", (int)result);
+}
+ */

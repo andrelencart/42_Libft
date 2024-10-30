@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:49:25 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/29 15:28:56 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:46:25 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+char	*ft_itoa(int n);
 void	*ft_memchr(const void *str, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t len);
 void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memset(void *ptrmem, int c, size_t len);
+char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *ptr, int c);
 char	*ft_strdup(char *src);
 char	*ft_strjoin(char const *s1, char const *s2);

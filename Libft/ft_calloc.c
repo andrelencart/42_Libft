@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/29 11:55:11 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:13:31 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,34 +26,35 @@
 	}
 	return (ptrmem); 
 } */
+
 void	*ft_calloc(size_t num, size_t size)
 {
 	int		total_size;
 	void	*ptr;
 
 	total_size = num * size;
-	ptr = (void *)malloc(total_size);
+	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);
 	ft_memset(ptr, 0, total_size);
 	return (ptr);
 }
 
-/* int main() {
-    int n = 5;
-    int* arr = (int*) ft_calloc(n, sizeof(int));
-	int i = 0;
+// int main() {
+//     size_t n = 10;
+//     int* arr = (int*) ft_calloc(n, sizeof(int));
+// 	size_t i = 0;
 
-    if (arr == NULL) 
-	{
-        printf("Memory allocation failed\n");
-        return 1;
-    }
-    while(i < n) 
-	{
-        printf("arr[%d] = %d\n", i, arr[i]);
-		i++;
-    }
-    free(arr);
-    return 0;
-} */
+//     if (arr == NULL) 
+// 	{
+//         printf("Memory allocation failed\n");
+//         return 1;
+//     }
+//     while(i < n) 
+// 	{
+//         printf("arr[%zu] = %d\n", i, arr[i]);
+// 		i++;
+//     }
+//     free(arr);
+//     return 0;
+// }

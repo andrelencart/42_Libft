@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 13:57:38 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/29 16:34:53 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:23:07 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 	size_t	strlen;
 
+	if (!s)
+		return (NULL);
 	strlen = ft_strlen(s);
 	if (start >= strlen)
 		return (NULL);
@@ -38,13 +40,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-
-/* int	main(void)
+/* 
+int	main(void)
 {
 	char	*str = "Hello world";
 	char 	*sub;
 
-	sub = ft_substr("tripouille", 0, 42000);
+	sub = ft_substr(NULL, 0, 42);
 	
 	printf("Original: %s\n", "tripouille");
 	printf("Substr: %s\n", sub);

@@ -6,12 +6,11 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:45:58 by andre             #+#    #+#             */
-/*   Updated: 2024/10/29 16:38:50 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:37:38 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <bsd/string.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

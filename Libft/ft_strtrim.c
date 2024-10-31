@@ -6,13 +6,13 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:30:45 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/30 17:23:30 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:38:09 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_set(char const *str, char c)
+static char	ft_set(char const *str, char c)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:28:57 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/29 12:11:05 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:39:15 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strrchr(const char *ptr, int c)
 
 /* int main() {
     const char *text = "Hello, world!";
-    char target = 'l';
+    char target = ' ';
 
     char *result = ft_strrchr(text, target);
 

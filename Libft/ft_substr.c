@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 13:57:38 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/31 14:00:53 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:35:27 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	strlen = ft_strlen(s);
-	if (start > len || start >= strlen)
+	if (start >= strlen)
 		return (ft_strdup(""));
 	if (strlen - start < len)
 		size = strlen - start;

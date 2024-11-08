@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/31 18:06:25 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/11/08 20:21:05 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ void	*ft_calloc(size_t num, size_t size)
 	size_t	total_size;
 	void	*ptr;
 
-	if (num && (__SIZE_MAX__ / num < size))
+	if (num == 0 || size == 0)
+		return (NULL);
+	if (num && (ULONG_MAX / num < size))
 		return (NULL);
 	total_size = num * size;
-	if (total_size > __INT32_MAX__)
+	if (total_size > INT_MAX)
 		return (NULL);
 	ptr = malloc(total_size);
 	if (!ptr)
@@ -48,4 +50,4 @@ void	*ft_calloc(size_t num, size_t size)
     }
     free(arr);
     return 0;
-} */
+} */ nmemb or size is

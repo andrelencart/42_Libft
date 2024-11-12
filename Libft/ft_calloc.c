@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:46:54 by andcarva          #+#    #+#             */
-/*   Updated: 2024/11/08 20:21:05 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/11/12 19:24:51 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,4 @@ void	*ft_calloc(size_t num, size_t size)
     }
     free(arr);
     return 0;
-} */ nmemb or size is
+} */

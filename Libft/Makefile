@@ -6,7 +6,7 @@
 #    By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/24 14:34:40 by andcarva          #+#    #+#              #
-#    Updated: 2024/11/12 17:30:41 by andcarva         ###   ########.fr        #
+#    Updated: 2024/11/19 14:55:18 by andcarva         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ all: $(NAME)
  
 $(NAME): $(OBJ)
 	echo "Creating library $(NAME)"
-	@ar rcs $@ $?
+	@ar rcs $@ $^
 
 $(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@

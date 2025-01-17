@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:17:22 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/31 16:32:09 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:27:24 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	num;
-	
+
 	num = n;
 	if (num < 0)
 	{

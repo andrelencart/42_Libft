@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:34:42 by andre             #+#    #+#             */
-/*   Updated: 2024/10/29 16:38:40 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/12/09 16:17:40 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-/* int	main(void)
-{
-	const char arr[] = "+-42";
-	printf("%d\n", ft_atoi(arr));
-	printf("%d\n", atoi(arr));
-} */
+// int	main(void)
+// {
+// 	const char *arr = "-2147483648";
+// 	printf("%d\n", ft_atoi(arr));
+// 	printf("%d\n", atoi(arr));
+// }

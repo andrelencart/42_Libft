@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:49:25 by andcarva          #+#    #+#             */
-/*   Updated: 2024/11/04 15:32:12 by andcarva         ###   ########.fr       */
+/*   Updated: 2025/01/14 13:59:43 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 # include <stddef.h>
 # include <limits.h>
 # include <string.h>
+# include <stdint.h>
+# include "Printf_lib/ft_printf.h"
+# include "Get_next_line_lib/get_next_line.h"
+#include "Get_next_line_lib/get_next_line_bonus.h"
 
 typedef struct s_list
 {

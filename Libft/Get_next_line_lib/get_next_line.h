@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/01 16:12:18 by andcarva          #+#    #+#             */
-/*   Updated: 2024/11/12 16:32:27 by andcarva         ###   ########.fr       */
+/*   Created: 2024/11/11 15:10:56 by andcarva          #+#    #+#             */
+/*   Updated: 2025/01/14 14:04:55 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*temp;
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <fcntl.h>
 
-	if (!*lst)
-	{
-		*lst = new;
-		return ;
-	}
-	temp = *lst;
-	while (temp->next != NULL)
-	{
-		temp = temp->next;
-	}
-	temp->next = new;
-}
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
+
+char	*get_next_line(int fd);
+size_t	ft_linelen(char *str);
+char	*ft_strjoin_1(char *str1, char *str2);
+void	ft_buff_move(char *buffer);
+
+#endif // GET_NEXT_LINE_H

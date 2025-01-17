@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:07:09 by andcarva          #+#    #+#             */
-/*   Updated: 2024/10/31 15:37:03 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/12/09 16:10:00 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,15 +118,48 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-/* int	main(void)
-{
-	char	**split = ft_split("  he   g  f ", ' ');
-	int	i = 0;
+// char	**ft_split3(char const *str, char c)
+// {
+// 	size_t	cnt_word;
+// 	char	*string;
+// 	int		cnt;
 
-	while (split[i])
-	{
-		printf("%s\n", split[i]);
-		i++;
-	}
-	printf("%s\n", split[0]);
-} */
+// 	cnt_word = 0;
+// 	while (str && *str
+// 	{
+// 		while (*str == c)
+// 			str++;
+// 		if (*str == '\0')
+// 			cnt++;
+// 		while (*str != c)
+// 			str++;
+// 	}
+// 	while (str[cnt_word] && str[cnt_word] != c)
+// 		cnt_word++;
+// 	string = ft_substr(str, 0, cnt_word);
+// 	str += cnt_word;
+// 	if (str && *str)
+// 		split = ft_split3(str, c, split, count + 1);
+// 	else
+// 	{
+		
+// 		split = ft_calloc(count + 1, sizeof(char *));
+// 		if (!split)
+// 			return (NULL);
+// 	}
+// 	split[cnt_word] = NULL;
+// 	return (split);
+// }
+
+// int	main(void)
+// {
+// 	char	**split = ft_split3("Hello Word", ' ', split, 3);
+// 	int	i = 0;
+
+// 	while (split[i])
+// 	{
+// 		printf("%s\n", split[i]);
+// 		i++;
+// 	}
+// 	printf("%s\n", split[0]);
+// }

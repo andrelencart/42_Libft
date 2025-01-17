@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:29:53 by andre             #+#    #+#             */
-/*   Updated: 2024/10/29 12:15:08 by andcarva         ###   ########.fr       */
+/*   Updated: 2024/11/04 14:50:02 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
-	while (i < len)
+	while (i < len && (s || d))
 	{
 		d[i] = s[i];
 		i++;

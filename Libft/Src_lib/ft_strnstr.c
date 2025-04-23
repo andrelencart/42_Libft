@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:48:43 by andcarva          #+#    #+#             */
-/*   Updated: 2025/04/23 19:21:54 by andcarva         ###   ########.fr       */
+/*   Updated: 2025/04/23 19:39:32 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	char	strbig[] = "Hello, my name is Andre";
 	char	strlit[] = "name";
 	char	*result;
 
-	result = ft_strnstr(strbig, strlit, 14);
+	result = ft_strnstr(strbig, strlit, 12);
 	printf("%s\n", result);	
-} */
+}

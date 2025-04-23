@@ -6,7 +6,7 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:49:25 by andcarva          #+#    #+#             */
-/*   Updated: 2025/01/14 13:59:43 by andcarva         ###   ########.fr       */
+/*   Updated: 2025/04/17 19:15:10 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@
 # include <unistd.h>
 # include <stddef.h>
 # include <limits.h>
+# include <stdbool.h>
 # include <string.h>
 # include <stdint.h>
 # include "Printf_lib/ft_printf.h"
 # include "Get_next_line_lib/get_next_line.h"
-#include "Get_next_line_lib/get_next_line_bonus.h"
+// # include "Get_next_line_lib/get_next_line_bonus.h"
 
 typedef struct s_list
 {
@@ -30,6 +31,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+void	free_split(char **split);
 int		ft_atoi(const char *str);
 void	ft_bzero(void *ptr, size_t size);
 void	*ft_calloc(size_t num, size_t size);
@@ -68,7 +70,7 @@ size_t	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
-char	*ft_strrchr(const char *ptr, int c);
+char	*ft_strrstr(const char *ptr, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);

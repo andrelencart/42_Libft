@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 15:10:56 by andcarva          #+#    #+#             */
-/*   Updated: 2025/02/17 16:49:32 by andcarva         ###   ########.fr       */
+/*   Created: 2024/10/14 19:42:49 by andre             #+#    #+#             */
+/*   Updated: 2025/04/03 15:09:19 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "../libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include <fcntl.h>
+size_t	ft_strlen(const char *str)
+{
+	size_t	len;
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
-# endif
-
-char	*get_next_line(int fd);
-size_t	ft_linelen(char *str);
-char	*ft_strjoin_line(char *str1, char *str2);
-void	ft_buff_move(char *buffer);
-
-#endif // GET_NEXT_LINE_H
+	len = 0;
+	while (str[len] != '\0')
+		len++;
+	return (len);
+}

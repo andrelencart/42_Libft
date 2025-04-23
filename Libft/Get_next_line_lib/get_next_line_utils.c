@@ -6,13 +6,13 @@
 /*   By: andcarva <andcarva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:48:37 by andcarva          #+#    #+#             */
-/*   Updated: 2025/01/14 14:04:47 by andcarva         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:49:44 by andcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_strjoin_1(char *str1, char *str2)
+char	*ft_strjoin_line(char *str1, char *str2)
 {
 	char		*newstr;
 	size_t		i;

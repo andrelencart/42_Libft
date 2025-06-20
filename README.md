@@ -80,7 +80,7 @@ To recompile everything from scratch:
 
 ```bash
 make re
-
+```
 ### 2. Using Libft in Your Project
 
 1. **Include the Header**:
